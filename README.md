@@ -5,9 +5,7 @@ A full-stack band name generator built with Node.js, Express, and EJS. Users can
 ---
 
 ## 🚀 Live Demo
-COMING SOON
-
-(Replace with your Render deployment link after deployment)
+https://band-gen.onrender.com
 
 ---
 

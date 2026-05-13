@@ -1,0 +1,25 @@
+<%- include("partials/header.ejs") %>
+
+  <div class="container">
+    <h1>🎸 BandGen</h1>
+    <p>Create your next legendary band name</p>
+
+    <form action="/submit" method="POST">
+      <select name="genre">
+        <option value="Rock">Rock</option>
+        <option value="Indie">Indie</option>
+        <option value="Metal">Metal</option>
+      </select>
+
+      <button type="submit">Generate Name</button>
+    </form>
+
+    <% if (bandName) { %>
+      <div class="result">
+        <h2 id="bandName"><%= bandName %></h2>
+        <button onclick="copyName()">Copy Name</button>
+      </div>
+    <% } %>
+  </div>
+
+<%- include("partials/footer.ejs") %>
